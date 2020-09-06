@@ -8,6 +8,9 @@ const theme = createMuiTheme({
     },
     background: {
         default: "#FFFFFF"
+    },
+    typography: {
+        fontFamily: 'Ubuntu'
     }
 })
 
