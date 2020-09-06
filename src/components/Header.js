@@ -1,23 +1,26 @@
 import React from "react";
 import { Box, makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   header: {
-    height: "800px",
+    height: 800,
     backgroundImage:
-      "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://marketplace.canva.com/Asg8U/MAD1xqAsg8U/1/s2/canva-macbook-pro-on-brown-wooden-table-MAD1xqAsg8U.jpg')",
+      "linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://marketplace.canva.com/MABK3poo_Ys/1/screen_2x/canva-wooden-table-with-laptop--MABK3poo_Ys.jpg')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '3em',
     fontWeight: '700',
-    color: '#FFFFFF'
+    color: '#FFFFFF',
+    [theme.breakpoints.down('sm')]: {
+      height: 300,
+      fontSize: '2em'
+    }
   },
-});
+}));
 
 const Header = () => {
   const classes = useStyles();

@@ -47,7 +47,7 @@ const Posts = () => {
   const classes = useStyles();
   return (
     <Container maxWidth="lg" className={classes.postsContainer}>
-      <Typography variant="h3" className={classes.postsTitle}>
+      <Typography variant="h4" className={classes.postsTitle}>
         Posts
       </Typography>
       <Grid container spacing={3}>
